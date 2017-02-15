@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF269C3A1CC7828E0079672F /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF269C391CC7828E0079672F /* Json.swift */; };
+		AF4DAB481CD0BFE500127D37 /* BaseWebViewJsBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DAB471CD0BFE500127D37 /* BaseWebViewJsBridge.swift */; };
+		AF4DAB4A1CD0D9EE00127D37 /* WKWebViewJsBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DAB491CD0D9EE00127D37 /* WKWebViewJsBridge.swift */; };
+		AF4DAB4C1CD1B85400127D37 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DAB4B1CD1B85400127D37 /* WKWebViewController.swift */; };
+		AF80E6EF1CBD0AE00037B081 /* BridgeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80E6EE1CBD0AE00037B081 /* BridgeUtil.swift */; };
+		AF80E6F61CBD0EF70037B081 /* AbstractBridgeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80E6F51CBD0EF70037B081 /* AbstractBridgeHandler.swift */; };
+		AF80E6FE1CBD17530037B081 /* BaseBridgeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80E6FD1CBD17530037B081 /* BaseBridgeContext.swift */; };
+		AF80E7021CBE245B0037B081 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF80E7011CBE245B0037B081 /* WebViewJavascriptBridge.js.txt */; };
+		AF80E7041CBE29C60037B081 /* WebBusItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80E7031CBE29C60037B081 /* WebBusItem.swift */; };
+		AF80E7061CBE33A40037B081 /* ResponseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80E7051CBE33A40037B081 /* ResponseItem.swift */; };
+		AF80E7081CBE37430037B081 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80E7071CBE37430037B081 /* WebViewController.swift */; };
+		AF80E70B1CBE3C0B0037B081 /* JBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80E70A1CBE3C0B0037B081 /* JBottomBar.swift */; };
+		AF831DA11CC4E4E200600260 /* BridgeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF831DA01CC4E4E200600260 /* BridgeEnum.swift */; };
+		AF92B4C41CBE3D80002B7E7C /* JShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4C31CBE3D80002B7E7C /* JShare.swift */; };
+		AF92B4C61CBE4A5A002B7E7C /* JChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4C51CBE4A5A002B7E7C /* JChat.swift */; };
+		AF92B4C81CBE4D11002B7E7C /* JChatOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4C71CBE4D11002B7E7C /* JChatOrder.swift */; };
+		AF92B4CA1CBE50C9002B7E7C /* JChatProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4C91CBE50C9002B7E7C /* JChatProduct.swift */; };
+		AF92B4CC1CBE514E002B7E7C /* JComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4CB1CBE514E002B7E7C /* JComment.swift */; };
+		AF92B4CE1CBE5208002B7E7C /* JCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4CD1CBE5208002B7E7C /* JCommon.swift */; };
+		AF92B4D21CBE5ACB002B7E7C /* JConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4D11CBE5ACB002B7E7C /* JConfig.swift */; };
+		AF92B4D41CBE5B21002B7E7C /* JContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4D31CBE5B21002B7E7C /* JContext.swift */; };
+		AF92B4D61CBE5B55002B7E7C /* JImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4D51CBE5B55002B7E7C /* JImage.swift */; };
+		AF92B4D81CBE5BC9002B7E7C /* JLiveDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4D71CBE5BC9002B7E7C /* JLiveDetail.swift */; };
+		AF92B4DA1CBE5CF2002B7E7C /* JLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4D91CBE5CF2002B7E7C /* JLog.swift */; };
+		AF92B4DC1CBE5D1E002B7E7C /* JNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4DB1CBE5D1E002B7E7C /* JNote.swift */; };
+		AF92B4DE1CBE5D45002B7E7C /* JNotifyPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4DD1CBE5D45002B7E7C /* JNotifyPay.swift */; };
+		AF92B4E01CBE5D78002B7E7C /* JOpenWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4DF1CBE5D78002B7E7C /* JOpenWindow.swift */; };
+		AF92B4E21CBE5DBA002B7E7C /* JPageEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4E11CBE5DBA002B7E7C /* JPageEvent.swift */; };
+		AF92B4E41CBE5DD7002B7E7C /* JPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4E31CBE5DD7002B7E7C /* JPay.swift */; };
+		AF92B4E61CBE5DF5002B7E7C /* JProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4E51CBE5DF5002B7E7C /* JProductDetail.swift */; };
+		AF92B4E81CBE5E4E002B7E7C /* JSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4E71CBE5E4E002B7E7C /* JSystem.swift */; };
+		AF92B4EA1CBE5E6B002B7E7C /* JTitleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4E91CBE5E6B002B7E7C /* JTitleBar.swift */; };
+		AF92B4EC1CBE61F4002B7E7C /* JWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4EB1CBE61F4002B7E7C /* JWindow.swift */; };
+		AF92B4F01CBF4645002B7E7C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4EF1CBF4645002B7E7C /* Message.swift */; };
+		AF92B4F21CBF49F8002B7E7C /* JChooseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4F11CBF49F8002B7E7C /* JChooseImage.swift */; };
+		AF92B4F41CBF4A8D002B7E7C /* YmtCallBackParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4F31CBF4A8D002B7E7C /* YmtCallBackParam.swift */; };
+		AF92B4F61CBF4E89002B7E7C /* YmtCallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4F51CBF4E89002B7E7C /* YmtCallBack.swift */; };
+		AF92B4FE1CBF657A002B7E7C /* WebEventConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4FD1CBF657A002B7E7C /* WebEventConsts.swift */; };
+		AF92B5001CBF6E21002B7E7C /* WebContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B4FF1CBF6E21002B7E7C /* WebContext.swift */; };
+		AF92B5021CBF8790002B7E7C /* BasePageRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5011CBF8790002B7E7C /* BasePageRequestParams.swift */; };
+		AF92B5041CBF89BE002B7E7C /* PageEventDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5031CBF89BE002B7E7C /* PageEventDataItem.swift */; };
+		AF92B5061CBF8A6C002B7E7C /* PageEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5051CBF8A6C002B7E7C /* PageEvent.swift */; };
+		AF92B5081CBF8B4D002B7E7C /* WebContextItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5071CBF8B4D002B7E7C /* WebContextItem.swift */; };
+		AF92B50A1CBF8C65002B7E7C /* WebPageEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5091CBF8C65002B7E7C /* WebPageEvent.swift */; };
+		AF92B50C1CBF913D002B7E7C /* BasicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B50B1CBF913D002B7E7C /* BasicManager.swift */; };
+		AF92B5131CBF9EA0002B7E7C /* IPageEventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5121CBF9EA0002B7E7C /* IPageEventListener.swift */; };
+		AF92B5151CBF9EFF002B7E7C /* PageEventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5141CBF9EFF002B7E7C /* PageEventListener.swift */; };
+		AF92B51E1CBFA1B8002B7E7C /* BaseUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B51D1CBFA1B8002B7E7C /* BaseUIWebView.swift */; };
+		AF92B5201CBFA1D6002B7E7C /* BaseWKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B51F1CBFA1D6002B7E7C /* BaseWKWebView.swift */; };
+		AF92B5221CBFA209002B7E7C /* BaseWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5211CBFA209002B7E7C /* BaseWebView.swift */; };
+		AF92B5241CC091F8002B7E7C /* BaseBridgeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5231CC091F8002B7E7C /* BaseBridgeManager.swift */; };
+		AF92B5261CC0932D002B7E7C /* WebViewJsBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5251CC0932D002B7E7C /* WebViewJsBridge.swift */; };
+		AF92B5281CC4B8C5002B7E7C /* IBridgeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5271CC4B8C5002B7E7C /* IBridgeHandler.swift */; };
+		AF92B5301CC4C79C002B7E7C /* HandlerBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B52F1CC4C79C002B7E7C /* HandlerBridge.swift */; };
+		AF92B5321CC4CFE4002B7E7C /* DefaultHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5311CC4CFE4002B7E7C /* DefaultHandler.swift */; };
+		AF92B5341CC4D269002B7E7C /* BizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5331CC4D269002B7E7C /* BizManager.swift */; };
+		AF92B5361CC4D30A002B7E7C /* CommentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5351CC4D30A002B7E7C /* CommentManager.swift */; };
+		AF92B5381CC4D35C002B7E7C /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5371CC4D35C002B7E7C /* LogManager.swift */; };
+		AF92B53A1CC4D3A2002B7E7C /* MsgManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5391CC4D3A2002B7E7C /* MsgManager.swift */; };
+		AF92B53C1CC4D436002B7E7C /* NoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B53B1CC4D436002B7E7C /* NoteManager.swift */; };
+		AF92B53E1CC4D4CB002B7E7C /* PayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B53D1CC4D4CB002B7E7C /* PayManager.swift */; };
+		AF92B5401CC4D51A002B7E7C /* ShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B53F1CC4D51A002B7E7C /* ShareManager.swift */; };
+		AF92B5421CC4DA85002B7E7C /* SystemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5411CC4DA85002B7E7C /* SystemManager.swift */; };
+		AF92B5441CC4DB01002B7E7C /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF92B5431CC4DB01002B7E7C /* UserManager.swift */; };
+		AFB1B5BB1CF40BD1004E8E6A /* TopBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB1B5BA1CF40BD1004E8E6A /* TopBarManager.swift */; };
+		AFB211321CC76BF900CB1419 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB211311CC76BF900CB1419 /* SwiftyJSON.swift */; };
+		AFB613CC1CCA288E00871664 /* JsonArraySerialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB613CA1CCA288E00871664 /* JsonArraySerialize.swift */; };
+		AFB613CD1CCA288E00871664 /* JsonSerialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB613CB1CCA288E00871664 /* JsonSerialize.swift */; };
+		AFB613CF1CCB41D400871664 /* YmtAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB613CE1CCB41D400871664 /* YmtAppDelegate.swift */; };
+		AFCD1C5B1CCF63D70044CD94 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCD1C5A1CCF63D70044CD94 /* EventManager.swift */; };
+		AFF719C01CCE178E00315DF0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF719BF1CCE178E00315DF0 /* Extensions.swift */; };
+		AFF719C21CCE17BF00315DF0 /* WebPageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF719C11CCE17BF00315DF0 /* WebPageLoader.swift */; };
+		AFF719C71CCF1C5900315DF0 /* ResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF719C61CCF1C5900315DF0 /* ResponseResult.swift */; };
+		CE8188881C89577F004B7EEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8188871C89577F004B7EEA /* AppDelegate.swift */; };
+		CE81888F1C89577F004B7EEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE81888D1C89577F004B7EEA /* Main.storyboard */; };
+		CE8188911C89577F004B7EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8188901C89577F004B7EEA /* Assets.xcassets */; };
+		CE8188941C89577F004B7EEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8188921C89577F004B7EEA /* LaunchScreen.storyboard */; };
+		CE81889F1C89577F004B7EEA /* JSBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81889E1C89577F004B7EEA /* JSBridgeTests.swift */; };
+		CE8188BA1C895DE9004B7EEA /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = CE8188B71C895DE9004B7EEA /* demo.html */; };
+		CE8188BB1C895DE9004B7EEA /* jTest.js in Resources */ = {isa = PBXBuildFile; fileRef = CE8188B81C895DE9004B7EEA /* jTest.js */; };
+		CE8188BC1C895DE9004B7EEA /* jymt-1.0.0.js in Resources */ = {isa = PBXBuildFile; fileRef = CE8188B91C895DE9004B7EEA /* jymt-1.0.0.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE81889B1C89577F004B7EEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE81887C1C89577E004B7EEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE8188831C89577E004B7EEA;
+			remoteInfo = JSBridge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF269C391CC7828E0079672F /* Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		AF4DAB471CD0BFE500127D37 /* BaseWebViewJsBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewJsBridge.swift; sourceTree = "<group>"; };
+		AF4DAB491CD0D9EE00127D37 /* WKWebViewJsBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewJsBridge.swift; sourceTree = "<group>"; };
+		AF4DAB4B1CD1B85400127D37 /* WKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
+		AF80E6EE1CBD0AE00037B081 /* BridgeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeUtil.swift; sourceTree = "<group>"; };
+		AF80E6F51CBD0EF70037B081 /* AbstractBridgeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractBridgeHandler.swift; sourceTree = "<group>"; };
+		AF80E6FD1CBD17530037B081 /* BaseBridgeContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBridgeContext.swift; sourceTree = "<group>"; };
+		AF80E7011CBE245B0037B081 /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
+		AF80E7031CBE29C60037B081 /* WebBusItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebBusItem.swift; sourceTree = "<group>"; };
+		AF80E7051CBE33A40037B081 /* ResponseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseItem.swift; sourceTree = "<group>"; };
+		AF80E7071CBE37430037B081 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		AF80E70A1CBE3C0B0037B081 /* JBottomBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBottomBar.swift; sourceTree = "<group>"; };
+		AF831DA01CC4E4E200600260 /* BridgeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeEnum.swift; sourceTree = "<group>"; };
+		AF92B4C31CBE3D80002B7E7C /* JShare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JShare.swift; sourceTree = "<group>"; };
+		AF92B4C51CBE4A5A002B7E7C /* JChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JChat.swift; sourceTree = "<group>"; };
+		AF92B4C71CBE4D11002B7E7C /* JChatOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JChatOrder.swift; sourceTree = "<group>"; };
+		AF92B4C91CBE50C9002B7E7C /* JChatProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JChatProduct.swift; sourceTree = "<group>"; };
+		AF92B4CB1CBE514E002B7E7C /* JComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JComment.swift; sourceTree = "<group>"; };
+		AF92B4CD1CBE5208002B7E7C /* JCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCommon.swift; sourceTree = "<group>"; };
+		AF92B4D11CBE5ACB002B7E7C /* JConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JConfig.swift; sourceTree = "<group>"; };
+		AF92B4D31CBE5B21002B7E7C /* JContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JContext.swift; sourceTree = "<group>"; };
+		AF92B4D51CBE5B55002B7E7C /* JImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JImage.swift; sourceTree = "<group>"; };
+		AF92B4D71CBE5BC9002B7E7C /* JLiveDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLiveDetail.swift; sourceTree = "<group>"; };
+		AF92B4D91CBE5CF2002B7E7C /* JLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLog.swift; sourceTree = "<group>"; };
+		AF92B4DB1CBE5D1E002B7E7C /* JNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JNote.swift; sourceTree = "<group>"; };
+		AF92B4DD1CBE5D45002B7E7C /* JNotifyPay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JNotifyPay.swift; sourceTree = "<group>"; };
+		AF92B4DF1CBE5D78002B7E7C /* JOpenWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JOpenWindow.swift; sourceTree = "<group>"; };
+		AF92B4E11CBE5DBA002B7E7C /* JPageEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPageEvent.swift; sourceTree = "<group>"; };
+		AF92B4E31CBE5DD7002B7E7C /* JPay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPay.swift; sourceTree = "<group>"; };
+		AF92B4E51CBE5DF5002B7E7C /* JProductDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JProductDetail.swift; sourceTree = "<group>"; };
+		AF92B4E71CBE5E4E002B7E7C /* JSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSystem.swift; sourceTree = "<group>"; };
+		AF92B4E91CBE5E6B002B7E7C /* JTitleBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTitleBar.swift; sourceTree = "<group>"; };
+		AF92B4EB1CBE61F4002B7E7C /* JWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWindow.swift; sourceTree = "<group>"; };
+		AF92B4EF1CBF4645002B7E7C /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		AF92B4F11CBF49F8002B7E7C /* JChooseImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JChooseImage.swift; sourceTree = "<group>"; };
+		AF92B4F31CBF4A8D002B7E7C /* YmtCallBackParam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YmtCallBackParam.swift; sourceTree = "<group>"; };
+		AF92B4F51CBF4E89002B7E7C /* YmtCallBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YmtCallBack.swift; sourceTree = "<group>"; };
+		AF92B4FD1CBF657A002B7E7C /* WebEventConsts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebEventConsts.swift; sourceTree = "<group>"; };
+		AF92B4FF1CBF6E21002B7E7C /* WebContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebContext.swift; sourceTree = "<group>"; };
+		AF92B5011CBF8790002B7E7C /* BasePageRequestParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePageRequestParams.swift; sourceTree = "<group>"; };
+		AF92B5031CBF89BE002B7E7C /* PageEventDataItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageEventDataItem.swift; sourceTree = "<group>"; };
+		AF92B5051CBF8A6C002B7E7C /* PageEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageEvent.swift; sourceTree = "<group>"; };
+		AF92B5071CBF8B4D002B7E7C /* WebContextItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebContextItem.swift; sourceTree = "<group>"; };
+		AF92B5091CBF8C65002B7E7C /* WebPageEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPageEvent.swift; sourceTree = "<group>"; };
+		AF92B50B1CBF913D002B7E7C /* BasicManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicManager.swift; sourceTree = "<group>"; };
+		AF92B5121CBF9EA0002B7E7C /* IPageEventListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPageEventListener.swift; sourceTree = "<group>"; };
+		AF92B5141CBF9EFF002B7E7C /* PageEventListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageEventListener.swift; sourceTree = "<group>"; };
+		AF92B51D1CBFA1B8002B7E7C /* BaseUIWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUIWebView.swift; sourceTree = "<group>"; };
+		AF92B51F1CBFA1D6002B7E7C /* BaseWKWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWKWebView.swift; sourceTree = "<group>"; };
+		AF92B5211CBFA209002B7E7C /* BaseWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebView.swift; sourceTree = "<group>"; };
+		AF92B5231CC091F8002B7E7C /* BaseBridgeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBridgeManager.swift; sourceTree = "<group>"; };
+		AF92B5251CC0932D002B7E7C /* WebViewJsBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewJsBridge.swift; sourceTree = "<group>"; };
+		AF92B5271CC4B8C5002B7E7C /* IBridgeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBridgeHandler.swift; sourceTree = "<group>"; };
+		AF92B52F1CC4C79C002B7E7C /* HandlerBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandlerBridge.swift; sourceTree = "<group>"; };
+		AF92B5311CC4CFE4002B7E7C /* DefaultHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultHandler.swift; sourceTree = "<group>"; };
+		AF92B5331CC4D269002B7E7C /* BizManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BizManager.swift; sourceTree = "<group>"; };
+		AF92B5351CC4D30A002B7E7C /* CommentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentManager.swift; sourceTree = "<group>"; };
+		AF92B5371CC4D35C002B7E7C /* LogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		AF92B5391CC4D3A2002B7E7C /* MsgManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MsgManager.swift; sourceTree = "<group>"; };
+		AF92B53B1CC4D436002B7E7C /* NoteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteManager.swift; sourceTree = "<group>"; };
+		AF92B53D1CC4D4CB002B7E7C /* PayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayManager.swift; sourceTree = "<group>"; };
+		AF92B53F1CC4D51A002B7E7C /* ShareManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareManager.swift; sourceTree = "<group>"; };
+		AF92B5411CC4DA85002B7E7C /* SystemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemManager.swift; sourceTree = "<group>"; };
+		AF92B5431CC4DB01002B7E7C /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		AFB1B5BA1CF40BD1004E8E6A /* TopBarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarManager.swift; sourceTree = "<group>"; };
+		AFB211301CC76BF900CB1419 /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		AFB211311CC76BF900CB1419 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		AFB613CA1CCA288E00871664 /* JsonArraySerialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonArraySerialize.swift; sourceTree = "<group>"; };
+		AFB613CB1CCA288E00871664 /* JsonSerialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerialize.swift; sourceTree = "<group>"; };
+		AFB613CE1CCB41D400871664 /* YmtAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YmtAppDelegate.swift; sourceTree = "<group>"; };
+		AFCD1C5A1CCF63D70044CD94 /* EventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
+		AFF719BF1CCE178E00315DF0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AFF719C11CCE17BF00315DF0 /* WebPageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPageLoader.swift; sourceTree = "<group>"; };
+		AFF719C61CCF1C5900315DF0 /* ResponseResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseResult.swift; sourceTree = "<group>"; };
+		CE8188841C89577E004B7EEA /* JSBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8188871C89577F004B7EEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE81888E1C89577F004B7EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE8188901C89577F004B7EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE8188931C89577F004B7EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE8188951C89577F004B7EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE81889A1C89577F004B7EEA /* JSBridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSBridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE81889E1C89577F004B7EEA /* JSBridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSBridgeTests.swift; sourceTree = "<group>"; };
+		CE8188A01C89577F004B7EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8188B71C895DE9004B7EEA /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
+		CE8188B81C895DE9004B7EEA /* jTest.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jTest.js; sourceTree = "<group>"; };
+		CE8188B91C895DE9004B7EEA /* jymt-1.0.0.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jymt-1.0.0.js"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE8188811C89577E004B7EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8188971C89577F004B7EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF80E6E41CBD0A150037B081 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				AF92B5181CBFA107002B7E7C /* WebView */,
+				AF80E6E91CBD0A350037B081 /* Handler */,
+				AF80E6E81CBD0A2F0037B081 /* Manager */,
+				AF80E6E71CBD0A280037B081 /* Base */,
+				AF80E6E51CBD0A1A0037B081 /* Model */,
+				AF80E7011CBE245B0037B081 /* WebViewJavascriptBridge.js.txt */,
+				AF92B5231CC091F8002B7E7C /* BaseBridgeManager.swift */,
+				AF92B5251CC0932D002B7E7C /* WebViewJsBridge.swift */,
+				AF4DAB471CD0BFE500127D37 /* BaseWebViewJsBridge.swift */,
+				AF4DAB491CD0D9EE00127D37 /* WKWebViewJsBridge.swift */,
+			);
+			name = Web;
+			sourceTree = "<group>";
+		};
+		AF80E6E51CBD0A1A0037B081 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF80E7091CBE3BF40037B081 /* Params */,
+				AF92B4FB1CBF5C4D002B7E7C /* Response */,
+				AF92B4F71CBF4EEE002B7E7C /* Core */,
+				AFF719C61CCF1C5900315DF0 /* ResponseResult.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AF80E6E71CBD0A280037B081 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AF80E6F51CBD0EF70037B081 /* AbstractBridgeHandler.swift */,
+				AF92B5121CBF9EA0002B7E7C /* IPageEventListener.swift */,
+				AF92B5271CC4B8C5002B7E7C /* IBridgeHandler.swift */,
+				AFB613CE1CCB41D400871664 /* YmtAppDelegate.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		AF80E6E81CBD0A2F0037B081 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				AF269C391CC7828E0079672F /* Json.swift */,
+				AF80E6EE1CBD0AE00037B081 /* BridgeUtil.swift */,
+				AF92B5141CBF9EFF002B7E7C /* PageEventListener.swift */,
+				AFF719BF1CCE178E00315DF0 /* Extensions.swift */,
+				AFF719C11CCE17BF00315DF0 /* WebPageLoader.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		AF80E6E91CBD0A350037B081 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				AF92B50B1CBF913D002B7E7C /* BasicManager.swift */,
+				AF92B5311CC4CFE4002B7E7C /* DefaultHandler.swift */,
+				AF92B52F1CC4C79C002B7E7C /* HandlerBridge.swift */,
+				AF92B5331CC4D269002B7E7C /* BizManager.swift */,
+				AF92B5351CC4D30A002B7E7C /* CommentManager.swift */,
+				AF92B5371CC4D35C002B7E7C /* LogManager.swift */,
+				AF92B5391CC4D3A2002B7E7C /* MsgManager.swift */,
+				AF92B53B1CC4D436002B7E7C /* NoteManager.swift */,
+				AF92B53D1CC4D4CB002B7E7C /* PayManager.swift */,
+				AF92B53F1CC4D51A002B7E7C /* ShareManager.swift */,
+				AF92B5411CC4DA85002B7E7C /* SystemManager.swift */,
+				AF92B5431CC4DB01002B7E7C /* UserManager.swift */,
+				AF831DA01CC4E4E200600260 /* BridgeEnum.swift */,
+				AFCD1C5A1CCF63D70044CD94 /* EventManager.swift */,
+				AFB1B5BA1CF40BD1004E8E6A /* TopBarManager.swift */,
+			);
+			name = Handler;
+			sourceTree = "<group>";
+		};
+		AF80E7091CBE3BF40037B081 /* Params */ = {
+			isa = PBXGroup;
+			children = (
+				AF92B4F11CBF49F8002B7E7C /* JChooseImage.swift */,
+				AF80E70A1CBE3C0B0037B081 /* JBottomBar.swift */,
+				AF92B4C31CBE3D80002B7E7C /* JShare.swift */,
+				AF92B4C51CBE4A5A002B7E7C /* JChat.swift */,
+				AF92B4C71CBE4D11002B7E7C /* JChatOrder.swift */,
+				AF92B4C91CBE50C9002B7E7C /* JChatProduct.swift */,
+				AF92B4CB1CBE514E002B7E7C /* JComment.swift */,
+				AF92B4CD1CBE5208002B7E7C /* JCommon.swift */,
+				AF92B4D11CBE5ACB002B7E7C /* JConfig.swift */,
+				AF92B4D31CBE5B21002B7E7C /* JContext.swift */,
+				AF92B4D51CBE5B55002B7E7C /* JImage.swift */,
+				AF92B4D71CBE5BC9002B7E7C /* JLiveDetail.swift */,
+				AF92B4D91CBE5CF2002B7E7C /* JLog.swift */,
+				AF92B4DB1CBE5D1E002B7E7C /* JNote.swift */,
+				AF92B4DD1CBE5D45002B7E7C /* JNotifyPay.swift */,
+				AF92B4DF1CBE5D78002B7E7C /* JOpenWindow.swift */,
+				AF92B4E11CBE5DBA002B7E7C /* JPageEvent.swift */,
+				AF92B4E31CBE5DD7002B7E7C /* JPay.swift */,
+				AF92B4E51CBE5DF5002B7E7C /* JProductDetail.swift */,
+				AF92B4E71CBE5E4E002B7E7C /* JSystem.swift */,
+				AF92B4E91CBE5E6B002B7E7C /* JTitleBar.swift */,
+				AF92B4EB1CBE61F4002B7E7C /* JWindow.swift */,
+			);
+			name = Params;
+			sourceTree = "<group>";
+		};
+		AF92B4F71CBF4EEE002B7E7C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AF92B4EF1CBF4645002B7E7C /* Message.swift */,
+				AF80E6FD1CBD17530037B081 /* BaseBridgeContext.swift */,
+				AF92B4FF1CBF6E21002B7E7C /* WebContext.swift */,
+				AF92B5011CBF8790002B7E7C /* BasePageRequestParams.swift */,
+				AF92B5071CBF8B4D002B7E7C /* WebContextItem.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		AF92B4FB1CBF5C4D002B7E7C /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				AF80E7031CBE29C60037B081 /* WebBusItem.swift */,
+				AF92B4F31CBF4A8D002B7E7C /* YmtCallBackParam.swift */,
+				AF92B4F51CBF4E89002B7E7C /* YmtCallBack.swift */,
+				AF80E7051CBE33A40037B081 /* ResponseItem.swift */,
+				AF92B4FD1CBF657A002B7E7C /* WebEventConsts.swift */,
+				AF92B5031CBF89BE002B7E7C /* PageEventDataItem.swift */,
+				AF92B5051CBF8A6C002B7E7C /* PageEvent.swift */,
+				AF92B5091CBF8C65002B7E7C /* WebPageEvent.swift */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
+		AF92B5181CBFA107002B7E7C /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				AF92B51D1CBFA1B8002B7E7C /* BaseUIWebView.swift */,
+				AF92B51F1CBFA1D6002B7E7C /* BaseWKWebView.swift */,
+				AF92B5211CBFA209002B7E7C /* BaseWebView.swift */,
+			);
+			name = WebView;
+			sourceTree = "<group>";
+		};
+		CE81887B1C89577E004B7EEA = {
+			isa = PBXGroup;
+			children = (
+				AF80E6E41CBD0A150037B081 /* Web */,
+				CE8188A91C89588B004B7EEA /* ThridParty */,
+				CE8188861C89577F004B7EEA /* JSBridge */,
+				CE81889D1C89577F004B7EEA /* JSBridgeTests */,
+				CE8188851C89577E004B7EEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE8188851C89577E004B7EEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE8188841C89577E004B7EEA /* JSBridge.app */,
+				CE81889A1C89577F004B7EEA /* JSBridgeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE8188861C89577F004B7EEA /* JSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				CE8188B71C895DE9004B7EEA /* demo.html */,
+				CE8188B81C895DE9004B7EEA /* jTest.js */,
+				CE8188B91C895DE9004B7EEA /* jymt-1.0.0.js */,
+				CE8188871C89577F004B7EEA /* AppDelegate.swift */,
+				CE81888D1C89577F004B7EEA /* Main.storyboard */,
+				CE8188901C89577F004B7EEA /* Assets.xcassets */,
+				CE8188921C89577F004B7EEA /* LaunchScreen.storyboard */,
+				CE8188951C89577F004B7EEA /* Info.plist */,
+				AF80E7071CBE37430037B081 /* WebViewController.swift */,
+				AF4DAB4B1CD1B85400127D37 /* WKWebViewController.swift */,
+			);
+			path = JSBridge;
+			sourceTree = "<group>";
+		};
+		CE81889D1C89577F004B7EEA /* JSBridgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE81889E1C89577F004B7EEA /* JSBridgeTests.swift */,
+				CE8188A01C89577F004B7EEA /* Info.plist */,
+			);
+			path = JSBridgeTests;
+			sourceTree = "<group>";
+		};
+		CE8188A91C89588B004B7EEA /* ThridParty */ = {
+			isa = PBXGroup;
+			children = (
+				AFB613CA1CCA288E00871664 /* JsonArraySerialize.swift */,
+				AFB613CB1CCA288E00871664 /* JsonSerialize.swift */,
+				AFB211301CC76BF900CB1419 /* SwiftyJSON.h */,
+				AFB211311CC76BF900CB1419 /* SwiftyJSON.swift */,
+			);
+			name = ThridParty;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE8188831C89577E004B7EEA /* JSBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8188A31C89577F004B7EEA /* Build configuration list for PBXNativeTarget "JSBridge" */;
+			buildPhases = (
+				CE8188801C89577E004B7EEA /* Sources */,
+				CE8188811C89577E004B7EEA /* Frameworks */,
+				CE8188821C89577E004B7EEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSBridge;
+			productName = JSBridge;
+			productReference = CE8188841C89577E004B7EEA /* JSBridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE8188991C89577F004B7EEA /* JSBridgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8188A61C89577F004B7EEA /* Build configuration list for PBXNativeTarget "JSBridgeTests" */;
+			buildPhases = (
+				CE8188961C89577F004B7EEA /* Sources */,
+				CE8188971C89577F004B7EEA /* Frameworks */,
+				CE8188981C89577F004B7EEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE81889C1C89577F004B7EEA /* PBXTargetDependency */,
+			);
+			name = JSBridgeTests;
+			productName = JSBridgeTests;
+			productReference = CE81889A1C89577F004B7EEA /* JSBridgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE81887C1C89577E004B7EEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ymatou;
+				TargetAttributes = {
+					CE8188831C89577E004B7EEA = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					CE8188991C89577F004B7EEA = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CE8188831C89577E004B7EEA;
+					};
+				};
+			};
+			buildConfigurationList = CE81887F1C89577E004B7EEA /* Build configuration list for PBXProject "JSBridge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE81887B1C89577E004B7EEA;
+			productRefGroup = CE8188851C89577E004B7EEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE8188831C89577E004B7EEA /* JSBridge */,
+				CE8188991C89577F004B7EEA /* JSBridgeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE8188821C89577E004B7EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8188BC1C895DE9004B7EEA /* jymt-1.0.0.js in Resources */,
+				CE8188941C89577F004B7EEA /* LaunchScreen.storyboard in Resources */,
+				CE8188BB1C895DE9004B7EEA /* jTest.js in Resources */,
+				CE8188BA1C895DE9004B7EEA /* demo.html in Resources */,
+				AF80E7021CBE245B0037B081 /* WebViewJavascriptBridge.js.txt in Resources */,
+				CE8188911C89577F004B7EEA /* Assets.xcassets in Resources */,
+				CE81888F1C89577F004B7EEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8188981C89577F004B7EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE8188801C89577E004B7EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF92B53E1CC4D4CB002B7E7C /* PayManager.swift in Sources */,
+				AF4DAB4A1CD0D9EE00127D37 /* WKWebViewJsBridge.swift in Sources */,
+				AF92B51E1CBFA1B8002B7E7C /* BaseUIWebView.swift in Sources */,
+				AF92B5441CC4DB01002B7E7C /* UserManager.swift in Sources */,
+				AF92B50A1CBF8C65002B7E7C /* WebPageEvent.swift in Sources */,
+				AFB613CC1CCA288E00871664 /* JsonArraySerialize.swift in Sources */,
+				AF92B4E81CBE5E4E002B7E7C /* JSystem.swift in Sources */,
+				AFF719C71CCF1C5900315DF0 /* ResponseResult.swift in Sources */,
+				AF92B4E21CBE5DBA002B7E7C /* JPageEvent.swift in Sources */,
+				AF92B5201CBFA1D6002B7E7C /* BaseWKWebView.swift in Sources */,
+				AFB211321CC76BF900CB1419 /* SwiftyJSON.swift in Sources */,
+				AF92B4EC1CBE61F4002B7E7C /* JWindow.swift in Sources */,
+				AF92B5361CC4D30A002B7E7C /* CommentManager.swift in Sources */,
+				AF92B4D21CBE5ACB002B7E7C /* JConfig.swift in Sources */,
+				AF92B4E41CBE5DD7002B7E7C /* JPay.swift in Sources */,
+				AF80E7081CBE37430037B081 /* WebViewController.swift in Sources */,
+				AF92B5281CC4B8C5002B7E7C /* IBridgeHandler.swift in Sources */,
+				AF92B50C1CBF913D002B7E7C /* BasicManager.swift in Sources */,
+				AF92B4F61CBF4E89002B7E7C /* YmtCallBack.swift in Sources */,
+				AF92B4C61CBE4A5A002B7E7C /* JChat.swift in Sources */,
+				AF92B4F21CBF49F8002B7E7C /* JChooseImage.swift in Sources */,
+				AF92B5301CC4C79C002B7E7C /* HandlerBridge.swift in Sources */,
+				AF92B4CC1CBE514E002B7E7C /* JComment.swift in Sources */,
+				AF92B4E01CBE5D78002B7E7C /* JOpenWindow.swift in Sources */,
+				AF92B4F01CBF4645002B7E7C /* Message.swift in Sources */,
+				AF92B5151CBF9EFF002B7E7C /* PageEventListener.swift in Sources */,
+				AF92B53C1CC4D436002B7E7C /* NoteManager.swift in Sources */,
+				AF80E6F61CBD0EF70037B081 /* AbstractBridgeHandler.swift in Sources */,
+				AF92B5061CBF8A6C002B7E7C /* PageEvent.swift in Sources */,
+				AF92B4D61CBE5B55002B7E7C /* JImage.swift in Sources */,
+				AF269C3A1CC7828E0079672F /* Json.swift in Sources */,
+				AF92B4D81CBE5BC9002B7E7C /* JLiveDetail.swift in Sources */,
+				AF92B5421CC4DA85002B7E7C /* SystemManager.swift in Sources */,
+				AF92B4D41CBE5B21002B7E7C /* JContext.swift in Sources */,
+				CE8188881C89577F004B7EEA /* AppDelegate.swift in Sources */,
+				AF92B4CA1CBE50C9002B7E7C /* JChatProduct.swift in Sources */,
+				AFB613CF1CCB41D400871664 /* YmtAppDelegate.swift in Sources */,
+				AF92B53A1CC4D3A2002B7E7C /* MsgManager.swift in Sources */,
+				AF92B4C41CBE3D80002B7E7C /* JShare.swift in Sources */,
+				AF92B4F41CBF4A8D002B7E7C /* YmtCallBackParam.swift in Sources */,
+				AF92B5221CBFA209002B7E7C /* BaseWebView.swift in Sources */,
+				AF92B4EA1CBE5E6B002B7E7C /* JTitleBar.swift in Sources */,
+				AF4DAB4C1CD1B85400127D37 /* WKWebViewController.swift in Sources */,
+				AF80E7061CBE33A40037B081 /* ResponseItem.swift in Sources */,
+				AFF719C21CCE17BF00315DF0 /* WebPageLoader.swift in Sources */,
+				AF92B4DA1CBE5CF2002B7E7C /* JLog.swift in Sources */,
+				AF831DA11CC4E4E200600260 /* BridgeEnum.swift in Sources */,
+				AF92B4DC1CBE5D1E002B7E7C /* JNote.swift in Sources */,
+				AF92B5001CBF6E21002B7E7C /* WebContext.swift in Sources */,
+				AF92B5081CBF8B4D002B7E7C /* WebContextItem.swift in Sources */,
+				AF92B5261CC0932D002B7E7C /* WebViewJsBridge.swift in Sources */,
+				AF80E70B1CBE3C0B0037B081 /* JBottomBar.swift in Sources */,
+				AF92B4DE1CBE5D45002B7E7C /* JNotifyPay.swift in Sources */,
+				AF92B5021CBF8790002B7E7C /* BasePageRequestParams.swift in Sources */,
+				AFCD1C5B1CCF63D70044CD94 /* EventManager.swift in Sources */,
+				AF92B5131CBF9EA0002B7E7C /* IPageEventListener.swift in Sources */,
+				AFB613CD1CCA288E00871664 /* JsonSerialize.swift in Sources */,
+				AF4DAB481CD0BFE500127D37 /* BaseWebViewJsBridge.swift in Sources */,
+				AF80E6EF1CBD0AE00037B081 /* BridgeUtil.swift in Sources */,
+				AF92B4FE1CBF657A002B7E7C /* WebEventConsts.swift in Sources */,
+				AFF719C01CCE178E00315DF0 /* Extensions.swift in Sources */,
+				AF92B4C81CBE4D11002B7E7C /* JChatOrder.swift in Sources */,
+				AF92B5041CBF89BE002B7E7C /* PageEventDataItem.swift in Sources */,
+				AF92B5321CC4CFE4002B7E7C /* DefaultHandler.swift in Sources */,
+				AF92B4E61CBE5DF5002B7E7C /* JProductDetail.swift in Sources */,
+				AF80E7041CBE29C60037B081 /* WebBusItem.swift in Sources */,
+				AF80E6FE1CBD17530037B081 /* BaseBridgeContext.swift in Sources */,
+				AF92B5381CC4D35C002B7E7C /* LogManager.swift in Sources */,
+				AF92B4CE1CBE5208002B7E7C /* JCommon.swift in Sources */,
+				AF92B5241CC091F8002B7E7C /* BaseBridgeManager.swift in Sources */,
+				AF92B5341CC4D269002B7E7C /* BizManager.swift in Sources */,
+				AFB1B5BB1CF40BD1004E8E6A /* TopBarManager.swift in Sources */,
+				AF92B5401CC4D51A002B7E7C /* ShareManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8188961C89577F004B7EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE81889F1C89577F004B7EEA /* JSBridgeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE81889C1C89577F004B7EEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE8188831C89577E004B7EEA /* JSBridge */;
+			targetProxy = CE81889B1C89577F004B7EEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE81888D1C89577F004B7EEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE81888E1C89577F004B7EEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE8188921C89577F004B7EEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE8188931C89577F004B7EEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE8188A11C89577F004B7EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE8188A21C89577F004B7EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE8188A41C89577F004B7EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = JSBridge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymatou.JSBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CE8188A51C89577F004B7EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = JSBridge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymatou.JSBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CE8188A71C89577F004B7EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JSBridgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymatou.JSBridgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSBridge.app/JSBridge";
+			};
+			name = Debug;
+		};
+		CE8188A81C89577F004B7EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JSBridgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymatou.JSBridgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSBridge.app/JSBridge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE81887F1C89577E004B7EEA /* Build configuration list for PBXProject "JSBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8188A11C89577F004B7EEA /* Debug */,
+				CE8188A21C89577F004B7EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8188A31C89577F004B7EEA /* Build configuration list for PBXNativeTarget "JSBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8188A41C89577F004B7EEA /* Debug */,
+				CE8188A51C89577F004B7EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8188A61C89577F004B7EEA /* Build configuration list for PBXNativeTarget "JSBridgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8188A71C89577F004B7EEA /* Debug */,
+				CE8188A81C89577F004B7EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE81887C1C89577E004B7EEA /* Project object */;
+}

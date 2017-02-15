@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "WebViewJavascriptBridge.webView(UIWebView, shouldStartLoadWithRequest : NSURLRequest, navigationType : UIWebViewNavigationType) -&gt; Bool:WebViewJavascriptBridge.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "base.isScriptInject(url)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "openWinHandler.handler(AnyObject, resp : (data : AnyObject?) -&gt; ()) -&gt; ():BasicManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "WKWebViewJsBridge.(evaluateJavascript(String) -&gt; String?).(closure #1):WKWebViewJsBridge.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(object)">
+            </PersistentString>
+            <PersistentString
+               value = "javascriptCommand">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WebViewController.onEventNotification(NSNotification) -&gt; ():WebViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "toJson(AnyObject) -&gt; String:ToolUtil.swift">
+      </ContextState>
+      <ContextState
+         contextName = "BaseWebViewJsBridge.flushMessageQueue(String) -&gt; ():BaseWebViewJsBridge.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "context!.name">
+            </PersistentString>
+            <PersistentString
+               value = "message.data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WKWebViewJsBridge.webView(WKWebView, decidePolicyForNavigationAction : WKNavigationAction, decisionHandler : (WKNavigationActionPolicy) -&gt; ()) -&gt; ():WKWebViewJsBridge.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "navigationAction.request.URL">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "configHandler.handler(AnyObject, resp : (data : AnyObject?) -&gt; ()) -&gt; ():BasicManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "jj[&quot;debug&quot;].intValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BaseWebViewJsBridge.(flushMessageQueue(String) -&gt; ()).(closure #1):BaseWebViewJsBridge.swift">
+      </ContextState>
+      <ContextState
+         contextName = "JConfig.init(data : [String : AnyObject]) -&gt; JConfig:JConfig.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(data[&quot;debug&quot;])">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AbstractBridgeHandler.buildParams&lt;A&gt; (AnyObject, resp : (data : AnyObject?) -&gt; ()) -&gt; A?:AbstractBridgeHandler.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AbstractBridgeHandler.getResp&lt;A&gt; (Int, msg : String, data : A) -&gt; String:AbstractBridgeHandler.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "T">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static BridgeEnum.getByName(String) -&gt; BridgeEnum:BridgeEnum.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "BridgeEnum.values()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AbstractBridgeHandler.buildParams&lt;A&gt; (AnyObject?, resp : (data : AnyObject?) -&gt; ()) -&gt; A?:AbstractBridgeHandler.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AbstractBridgeHandler.callback(Int, data : AnyObject) -&gt; ():AbstractBridgeHandler.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "js">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closeWinHandler.handler(AnyObject, resp : (data : AnyObject?) -&gt; ()) -&gt; ():BasicManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "WebViewJavascriptBridge.init() -&gt; WebViewJavascriptBridge:WebViewJavascriptBridge.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "base.context!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
